@@ -1,0 +1,563 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOX ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+   
+    <!-- HTML2PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js" defer></script>
+
+    <title>Responsive curriculum vitae</title>
+</head>
+<body>
+    <!--========== HEADER ==========-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="bx bx-home"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class="bx bx-user"></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="bx bx-receipt"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#frameworks" class="nav__link">
+                            <i class="bx bx-code-alt"></i>Framkeworks
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#tools" class="nav__link">
+                            <i class="bx bx-package"></i>Tools
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class="bx bx-book"></i>Education
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class="bx bx-briefcase-alt"></i>Experience
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class="bx bx-award"></i>Certificates
+                        </a>
+                    </li>
+                    <!--
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class="bx bx-link-external"></i>References
+                        </a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>       
+    </header>
+
+    <main class="main container">
+        <!-- All elements within this div, are generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section grid">
+                        <div class="home__data grid">
+                            <img src="/img/aoliveira-photo.png" alt="photo" class="home__img">
+
+                            <h1 class="home__title">ANDRÉ <b>OLIVEIRA</b></h1>
+                            <h3 class="home__profession">Developer & geospatial engineer</h3>
+                        </div>
+
+                        <div class="home__information grid">
+                            <span class="home__information__item">
+                                <i class='bx bx-phone home__icon'></i> +351 917135594
+                            </span>
+                            <span class="home__information__item">
+                                <i class="bx bx-envelope home__icon"></i> alaqo@hotmail.com
+                            </span>
+                            <span class="home__information__item">
+                                <i class="bx bx-map home__icon"></i> Lisbon, Portugal
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Theme change button -->
+                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+
+                    <!-- Button to generate and download pdf. Available for desktop. -->
+                    <i class="bx bx-download download-cv" title="Download CV" id="download-button"></i>
+                </section>          
+                
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    <h2 class="section-title">Social</h2>
+                    
+                    <div class="social__container grid">
+                        <a href="https://www.instagram.com/aquintelaoliveira/" target="_blank" class="social__link">
+                            <i class='bx bxl-instagram-alt social__icon'></i>instagram.com/aquintelaoliveira
+                        </a>
+                    </div>
+                    <div class="social__container grid">
+                        <a href="https://www.linkedin.com/in/aquintelaoliveira/" target="_blank" class="social__link">
+                            <i class="bx bxl-linkedin-square social__icon"></i>linkedin.com/in/aquintelaoliveira
+                        </a>
+                    </div>
+                    <div class="social__contaner grid">
+                        <a href="https://github.com/aquintelaoliveira/" target="_blank" class="social__link">
+                            <i class='bx bxl-github social__icon'></i>github.com/aquintelaoliveira
+                        </a> 
+                    </div>
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+                    
+                    <p class="profile__description">
+                        I love programming. The challenge of solving complex problems with robust solutions is what motivates me everyday.
+                    </p>
+                    <p class="profile__description">
+                        I am a goal-oriented professional with solid communication skills and with the clear mindset that good work is sucessfully achived when working as a teamplayer.
+                    </p>
+                    <p class="profile__description">
+                        <br>
+                        "Clean code always look like it was written by someone who cares" - Michael Feathers
+                    </p>
+                </section>
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__container grid">
+                        <ul class="skills__content grid">
+                            <li class="skills__name">
+                                <span class="skills__bullet"></span> Java
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__bullet"></span> Kotlin
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__bullet"></span> C#
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__bullet"></span> Javascript
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__bullet"></span> Python
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__bullet"></span> SQL
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__bullet"></span> NoSQL
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__bullet"></span> HTML
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__bullet"></span> CSS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__bullet"></span> Solidity
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__bullet"></span> Matlab
+                            </li>
+                        </ul>
+                    </div> 
+                </section>
+
+                <!--========== FRAMEWORKS  ==========-->
+                <section class="frameworks section" id="frameworks">
+                    <h2 class="section-title">Frameworks</h2>
+
+                    <div class="frameworks__container grid">
+                        <ul class="frameworks__content grid">
+                            <li class="frameworks__name">
+                                <span class="frameworks__bullet"></span> Spring
+                            </li>
+                            <li class="frameworks__name">
+                                <span class="frameworks__bullet"></span> ASP.NET Core
+                            </li>
+                            <li class="frameworks__name">
+                                <span class="frameworks__bullet"></span> NodeJs
+                            </li>
+                            <li class="frameworks__name">
+                                <span class="frameworks__bullet"></span> Express
+                            </li>
+                            <li class="frameworks__name">
+                                <span class="frameworks__bullet"></span> React
+                            </li>
+                            <li class="frameworks__name">
+                                <span class="frameworks__bullet"></span> Flask
+                            </li>
+                            <li class="frameworks__name">
+                                <span class="frameworks__bullet"></span> Django
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--========== TOOLS  ==========-->
+                <section class="tools section" id="tools">
+                    <h2 class="section-title">Tools</h2>
+
+                    <div class="tools__container grid">
+                        <ul class="tools__content grid">
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> Git
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> Maven
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> Gradle
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> PostgresSQL
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> MongoDB
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> ElasticSearch
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> Android Studio
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> Docker
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> Postman
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> GCP
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> Microsoft Azure
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> GDAL
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> QGIS
+                            </li>
+                            <li class="tools__name">
+                                <span class="tools__bullet"></span> AutoCad
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="resume__right">
+                <!--========== WORK EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Work Experience</h2>
+
+                    <div class="experience__container grid">
+                        <!--
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__bullet"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data grid">
+                                <h3 class="experience__title">Developer</h3>
+                                <span class="experience__company">Critical Techworks</span>
+                                <span class="experience__time">2022 - Present . Less than a year</span>
+                            </div>
+                        </div>
+                        -->
+
+                    <div class="experience__container grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__bullet"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data grid">
+                                <h3 class="experience__title">Geospatial engineer</h3>
+                                <span class="experience__company">Exército Português</span>
+                                <span class="experience__time">2016 - 2022 . 6 yrs</span>
+                                <div class="experience__description">
+                                    <span>Co-manager of the Digital Pre-Processing Section department lead, of Control and Data Output Department in Centro de Informação Geoespacial do Exército, with the functions of:</span>
+                                    <ul>
+                                        <li>Management of all organizational vector information into raster information and treatment of raster cartography;</li>
+                                        <li>Development, management, processing and analysis of digital information in SQL server Databases;</li>
+                                        <li>Development of Python plugins and scrips for QGIS;</li>
+                                        <li>Produce raster cartographic products is order to satisfy custom requests of military and civil interest;</li>
+                                        <li>Trainer in several courses, such as: Geospatial Information, Image Interpretation, GIS analysis, etc.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience__container grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__bullet"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data grid">
+                                <h3 class="experience__title">Geospatial engineer</h3>
+                                <span class="experience__company">novEGT - Soluções de Engenharia</span>
+                                <span class="experience__time">2014 - 2016 . 2 yrs</span>
+                                <div class="experience__description">
+                                    <span>Worked as geospatial engineer and topographer, in several projects executing land registration, gps surveys and data quality control. Some of the projects were:</span>
+                                    <ul>
+                                        <li>SiNERGIC Project: which was a pilot project for land registration in Portugal;</li>
+                                        <li>Cadastral survey of the water and sanitation network for the municipality of Lisbon;</li>
+                                        <li>Control of high voltage line infrastructure for EDP;</li>
+                                        <li>Vectorization of the land registry for various clients.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience__container grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__bullet"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data grid">
+                                <h3 class="experience__title">Freelance GIS techniciant</h3>
+                                <span class="experience__company">COBA - Engineering and Environmental Consultants</span>
+                                <span class="experience__time">Mar 2013 - May 2013 · 3 mos</span>
+                                <span class="experience__description">Worked as a freelancer GIS technician, vectorize laser scanning data, to preform the registration and mapping of Angola.</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="experience__container grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__bullet"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data grid">
+                                <h3 class="experience__title">Trainee in the topography department</h3>
+                                <span class="experience__company">Mota-Engil</span>
+                                <span class="experience__time"> Jun 2013 - Ago 2013 · 3 mos</span>
+                                <div class="experience__description">
+                                    <span>As a trainee i was lucky enought to participate and do some real contribution in the company projects:</span>
+                                    <ul>
+                                        <li>Monotorization of building infrastructures;</li>
+                                        <li>Cadastral survey of the water and sanitation network for the municipality of Porto;</li>
+                                        <li>Geospatial data validation and estimation unit costs construction for a new national road in Colombia.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificates</h2>
+
+                    <div class="certificate__container grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Spatial databases with PostgreSQL/PostGIS (2021)</h3>
+                            <p class="certificate__description">Manage complex geographic data, to carry out in-depth analyzes.</p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">GIS Analysis (2018)</h3>
+                            <p class="certificate__description">Use QGIS to perform predictive analyses, having as a prerequisite to have basic notions related to Territorial Information Systems.</p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">ArcGis 3: Performing Analysis (2016)</h3>
+                            <p class="certificate__description">Support data-driven decision making.</p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">ArcGIS 2: Essential Workflows (2016)</h3>
+                            <p class="certificate__description">Explore, manage, and analyze geographic data and create informative maps.</p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">ArcGIS 1: Introduction to GIS (2016)</h3>
+                            <p class="certificate__description">Creation and manipulation of a map document, basic geographic data management, selection and analysis of data.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== REFERENCES ==========-->
+                <!--
+                <section class="references section" id="references">
+                    <h2 class="section-title">References</h2>
+
+                    <div class="references__container grid">
+                        <div class="references__content grid">
+                            <span class="references__subtitle">Sr. Director</span>
+                            <h3 class="references__title">Mr. Clay Doe</h3>
+                            <ul class="references__contact">
+                                <li>Phone: 999-777-666</li>
+                                <li>Email: user@email.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="references__content grid">
+                            <span class="references__subtitle">Mag. Developer</span>
+                            <h3 class="references__title">Mr. Robbinson Bass</h3>
+                            <ul class="references__contact">
+                                <li>Phone: 999-777-666</li>
+                                <li>Email: user@email.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                -->
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="education__container grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__bullet"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data grid">
+                                <h3 class="education__title">Bachelor degreee, Computer Engineering</h3>
+                                <span class="education__studies">ISEL - Instituto Superior De Engenharia De Lisboa</span>
+                                <span class="education__time">2017 - 2021</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education__container grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__bullet"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data grid">
+                                <h3 class="education__title">Master degreee, Geospatial Engineering</h3>
+                                <span class="education__studies">FCUL - Faculdade de Ciências da Universidade de Lisboa</span>
+                                <span class="education__time">2012 - 2013</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education__container grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__bullet"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data grid">
+                                <h3 class="education__title">Bachelor degreee, Geospatial Engineering</h3>
+                                <span class="education__university">FCUL -Faculdade de Ciências da Universidade de Lisboa</span>
+                                <span class="education__time">2008 - 2012</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+                    
+                    <div class="references__container grid">
+                        <ul class="languages__content grid">
+                            <li class="languages__name">
+                                <span class="languages__bullet"></span> Portuguese
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__bullet"></span> English
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__bullet"></span> Spanish
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+
+                    <div class="interests__container grid">
+                        <div class="interests__content">
+                            <i class="bx bx-headphone interests__icon"></i>
+                            <span class="interests__name">Music</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-terminal interests__icon"></i>
+                            <span class="interests__name">Code</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bxs-plane-alt interests__icon"></i>
+                            <span class="interests__name">Travel</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-cycling interests__icon"></i>
+                            <span class="interests__name">Ride</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-book interests__icon"></i>
+                            <span class="interests__name">Read</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-dumbbell interests__icon"></i>
+                            <span class="interests__name">Fitness</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+</body>
+</html>

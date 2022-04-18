@@ -1,2 +1,2 @@
-# cv-aoliveira
+# aoliveira-cv
 Responsive curriculum vitae
